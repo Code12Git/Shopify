@@ -1,7 +1,7 @@
 import Razorpay from "razorpay";
 import dotenv from "dotenv";
 import crypto from "crypto";
-import { Payment } from "../models/payment.js";
+import { Payment } from "../models/Payment.js";
 dotenv.config({ path: "./config.env" });
 
 export const instance = new Razorpay({
