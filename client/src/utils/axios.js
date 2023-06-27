@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:7000/api/";
+const BASE_URL = "https://shopify-h4ak.onrender.com/api/";
 const persistData = localStorage.getItem("persist:root");
 const persistObj = JSON.parse(persistData);
 const userObj = JSON.parse(persistObj?.user || "{}");
