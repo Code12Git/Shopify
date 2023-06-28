@@ -30,7 +30,7 @@ const Pay = () => {
       description: "Transaction",
       image: "https://cdn-icons-png.flaticon.com/512/2331/2331966.png",
       order_id: order.id,
-      callback_url: "http://localhost:7000/api/checkout/paymentverification",
+      callback_url: "https://shopify-h4ak.onrender.com/api/checkout/paymentverification",
       prefill: {
         name: `${firstname} ${lastname}`,
         email: data.email,
