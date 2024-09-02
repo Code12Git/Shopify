@@ -12,7 +12,7 @@ export const instance = new Razorpay({
 export const paymentController = async (req, res) => {
   try {
     const options = {
-      amount: Math.round(Number(req.body.amount) * 100), // amount in the smallest currency unit
+      amount: Math.round(Number(req.body.amount) * 100), 
       currency: "INR",
     };
     const order = await instance.orders.create(options);

@@ -77,7 +77,6 @@ const Login = () => {
           <button
             type="submit"
             onClick={handleSubmit}
-            disabled={isFetching}
             className="text-white bg-indigo-500 border-0 py-2 disabled:to-gray-100 disabled:cursor-not-allowed px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >
             Login

@@ -11,9 +11,9 @@ import NewProduct from "./Pages/NewProduct";
 import Login from "./Pages/Login";
 
 function App() {
-  const admin = JSON.parse(
-    JSON.parse(localStorage.getItem("persist:root")).user
-  ).currentUser.userData.isAdmin;
+  // const admin = JSON.parse(
+  //   JSON.parse(localStorage.getItem("persist:root")).user
+  // ).currentUser.userData.isAdmin;
 
   return (
     <>
@@ -21,14 +21,14 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
 
-          {admin && (
+          
             <>
               <Route
                 path="/"
                 element={
                   <>
                     <Navbar />
-                    <Home />
+                   <Home />
                   </>
                 }
               />
@@ -85,7 +85,7 @@ function App() {
                 }
               />
             </>
-          )}
+          )
         </Routes>
       </div>
     </>
